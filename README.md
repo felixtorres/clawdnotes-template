@@ -37,6 +37,7 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 ├── 5-Archive/         # Completed/inactive items
 ├── _templates/        # Note templates
 ├── CLAUDE.md          # AI assistant instructions
+├── MEMORY.md          # Long-term memory (decisions, learnings)
 └── docs/              # Guides and documentation
     ├── AI-WORKSPACE-GUIDE.md
     ├── AUTOMATION.md

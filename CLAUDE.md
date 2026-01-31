@@ -14,6 +14,7 @@ This vault is an Obsidian-based knowledge system. Follow these instructions when
 4-Resources/    → Reference material, topics of interest
 5-Archive/      → Completed/inactive items
 _templates/     → Note templates
+MEMORY.md       → Long-term memory (decisions, learnings, preferences)
 ```
 
 ---
@@ -52,6 +53,28 @@ _templates/     → Note templates
 ### 5-Archive/
 - **Mirror the live structure** — `5-Archive/2-Projects/`, etc.
 - Move entire folders when archiving
+
+---
+
+## Long-Term Memory (`MEMORY.md`)
+
+The vault's persistent memory — context that spans sessions.
+
+**What belongs here:**
+- Key decisions and their reasoning
+- Preferences and conventions established over time
+- Lessons learned (non-obvious discoveries)
+- Current focus areas
+
+**When to update:**
+- After making an important decision
+- After learning something non-obvious
+- After establishing a new convention
+- During weekly reviews (synthesize learnings from daily notes)
+
+**Maintenance:**
+- Review monthly — archive stale info
+- Keep it scannable — use headings, bullets, dates
 
 ---
 
