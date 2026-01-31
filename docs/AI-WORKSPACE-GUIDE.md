@@ -156,7 +156,7 @@ This template includes ready-to-use skills in `.claude/commands/`.
 | Claude Code | `CLAUDE.md` | Native support |
 | OpenCode | `AGENTS.md` | Copy CLAUDE.md → AGENTS.md |
 | Cursor | `.cursorrules` | Copy CLAUDE.md |
-| Clawdbot | `CLAUDE.md` | Full automation support |
+| OpenClaw | `CLAUDE.md` | Full automation support |
 | Aider | CLI flag | `aider --read CLAUDE.md` |
 
 ---
@@ -248,7 +248,7 @@ This template includes ready-to-use skills in `.claude/commands/`.
 - [Claude Code Best Practices](https://code.claude.com/docs/en/best-practices)
 - [Writing a Good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
 - [AGENTS.md Standard](https://agents.md/)
-- [Clawdbot](https://github.com/clawdbot/clawdbot)
+- [OpenClaw](https://github.com/openclaw/openclaw)
 
 ---
 

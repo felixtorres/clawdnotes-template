@@ -121,10 +121,10 @@ Copy this to your daily note on review day:
 
 This process can be partially automated with AI assistants.
 
-**With Clawdbot:**
+**With OpenClaw:**
 ```
 # Add to your cron jobs
-clawdbot cron add --schedule "0 18 * * 0" --text "Run weekly review for vault at /path/to/vault"
+openclaw cron add --schedule "0 18 * * 0" --text "Run weekly review for vault at /path/to/vault"
 ```
 
 **With Claude Code:**

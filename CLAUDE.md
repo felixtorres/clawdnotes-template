@@ -169,7 +169,7 @@ Don't wait for maintenance jobs — fix as you go.
 
 ## Scheduled Automation
 
-These can run automatically via Clawdbot cron jobs or manually:
+These can run automatically via OpenClaw cron jobs or manually:
 
 | Time | Job | What |
 |------|-----|------|

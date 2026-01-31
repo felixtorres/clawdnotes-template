@@ -15,22 +15,22 @@ Set up scheduled tasks to maintain your vault automatically.
 
 ---
 
-## Option 1: Clawdbot (Recommended)
+## Option 1: OpenClaw (Recommended)
 
-[Clawdbot](https://github.com/clawdbot/clawdbot) is an AI assistant with built-in cron job support.
+[OpenClaw](https://github.com/openclaw/openclaw) is an AI assistant with built-in cron job support.
 
 ### Setup
 
-1. **Install Clawdbot:**
+1. **Install OpenClaw:**
    ```bash
-   npm install -g clawdbot
-   clawdbot init
+   npm install -g openclaw
+   openclaw init
    ```
 
 2. **Add cron jobs:**
    ```bash
    # Morning briefing at 8am
-   clawdbot cron add --schedule "0 8 * * *" --text "Morning briefing for vault at /path/to/your/vault.
+   openclaw cron add --schedule "0 8 * * *" --text "Morning briefing for vault at /path/to/your/vault.
 
    Read CLAUDE.md for conventions, then:
    1. Create today's daily note if it doesn't exist
@@ -39,7 +39,7 @@ Set up scheduled tasks to maintain your vault automatically.
    4. Send brief summary (10 lines max)"
 
    # Inbox processing every 6 hours
-   clawdbot cron add --schedule "0 */6 * * *" --text "Process inbox for vault at /path/to/your/vault.
+   openclaw cron add --schedule "0 */6 * * *" --text "Process inbox for vault at /path/to/your/vault.
 
    For each item in 0-Inbox/:
    1. Analyze content type
@@ -47,7 +47,7 @@ Set up scheduled tasks to maintain your vault automatically.
    3. Report what was processed"
 
    # Evening sync at 11pm
-   clawdbot cron add --schedule "0 23 * * *" --text "Evening sync for vault at /path/to/your/vault.
+   openclaw cron add --schedule "0 23 * * *" --text "Evening sync for vault at /path/to/your/vault.
 
    1. Review today's daily note
    2. Ensure Done Today is complete
@@ -55,7 +55,7 @@ Set up scheduled tasks to maintain your vault automatically.
    4. Commit and push to GitHub"
 
    # Weekly review Sunday 6pm
-   clawdbot cron add --schedule "0 18 * * 0" --text "Weekly review for vault at /path/to/your/vault.
+   openclaw cron add --schedule "0 18 * * 0" --text "Weekly review for vault at /path/to/your/vault.
 
    Follow the process in docs/WEEKLY-REVIEW.md:
    1. Process inbox to zero
@@ -68,27 +68,27 @@ Set up scheduled tasks to maintain your vault automatically.
 
 3. **Start the gateway:**
    ```bash
-   clawdbot gateway start
+   openclaw gateway start
    ```
 
 ### Managing Jobs
 
 ```bash
 # List all jobs
-clawdbot cron list
+openclaw cron list
 
 # Run a job manually
-clawdbot cron run <job-id>
+openclaw cron run <job-id>
 
 # Remove a job
-clawdbot cron remove <job-id>
+openclaw cron remove <job-id>
 ```
 
 ---
 
 ## Option 2: Claude Code Slash Commands
 
-If using Claude Code without Clawdbot, create manual slash commands.
+If using Claude Code without OpenClaw, create manual slash commands.
 
 ### Setup
 
@@ -311,8 +311,8 @@ fi
 ### Cron jobs not running
 
 1. Check cron is enabled: `systemctl status cron`
-2. Check job list: `clawdbot cron list` or `crontab -l`
-3. Check logs: `clawdbot gateway logs` or `/var/log/syslog`
+2. Check job list: `openclaw cron list` or `crontab -l`
+3. Check logs: `openclaw gateway logs` or `/var/log/syslog`
 
 ### AI not finding vault
 

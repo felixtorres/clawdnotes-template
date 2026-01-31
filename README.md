@@ -1,6 +1,6 @@
 # ClawdNotes Template
 
-A shareable Obsidian vault template designed for AI-assisted note-taking with Claude Code, OpenCode, Cursor, Clawdbot, and other AI coding assistants.
+A shareable Obsidian vault template designed for AI-assisted note-taking with Claude Code, OpenCode, Cursor, OpenClaw, and other AI coding assistants.
 
 ## What This Is
 
@@ -102,7 +102,7 @@ Works with:
 - **Claude Code** — Reads CLAUDE.md, supports slash commands
 - **OpenCode** — Compatible (uses AGENTS.md alias)
 - **Cursor** — Compatible (copy CLAUDE.md to .cursorrules)
-- **Clawdbot** — Full automation support with cron jobs
+- **OpenClaw** — Full automation support with cron jobs
 - **Any AI assistant** — CLAUDE.md provides context
 
 ## Contributing
