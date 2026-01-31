@@ -1,0 +1,24 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/hotkeys.json
+
+# Keep core Obsidian config
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Personal files (add your own)
+# MEMORY.md  # Uncomment if you want to keep memory private
+# personal-*.md

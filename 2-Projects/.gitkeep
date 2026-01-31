@@ -1,0 +1,12 @@
+# Projects
+
+Active projects with deliverables and end dates.
+
+Each project gets its own folder with:
+- README.md (overview, status)
+- tasks.md (backlog, sprint)
+- decisions.md (ADRs)
+- ideas.md (brainstorming)
+- notes/ (research, design docs)
+
+Delete this file once you have actual projects.

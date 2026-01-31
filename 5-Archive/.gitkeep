@@ -1,0 +1,12 @@
+# Archive
+
+Completed or inactive items. Mirrors the live structure.
+
+Subfolders:
+- 0-Orphans/ (unlinked notes)
+- 1-Daily/YYYY-MM/ (old daily notes by month)
+- 2-Projects/ (completed projects)
+- 3-Areas/ (retired areas)
+- 4-Resources/ (outdated resources)
+
+Delete this file once you have actual archives.
