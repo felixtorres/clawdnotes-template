@@ -36,9 +36,11 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 ├── 4-Resources/       # Reference material, topics of interest
 ├── 5-Archive/         # Completed/inactive items
 ├── _templates/        # Note templates
-├── CLAUDE.md          # AI assistant instructions
+├── CLAUDE.md          # AI assistant instructions (overview)
+├── CONTEXT.md         # Vault state index (auto-updated)
 ├── MEMORY.md          # Long-term memory (decisions, learnings)
 └── docs/              # Guides and documentation
+    ├── CONVENTIONS.md
     ├── AI-WORKSPACE-GUIDE.md
     ├── AUTOMATION.md
     └── WEEKLY-REVIEW.md
@@ -71,7 +73,9 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 
 | Guide | What It Covers |
 |-------|----------------|
-| [CLAUDE.md](CLAUDE.md) | Vault conventions for AI assistants |
+| [CLAUDE.md](CLAUDE.md) | Vault overview and AI assistant instructions |
+| [CONVENTIONS.md](docs/CONVENTIONS.md) | Detailed folder rules, commit format, archival process |
+| [CONTEXT.md](CONTEXT.md) | Current vault state (auto-updated by /sync) |
 | [AI-WORKSPACE-GUIDE.md](docs/AI-WORKSPACE-GUIDE.md) | Complete setup for AI-assisted development |
 | [AUTOMATION.md](docs/AUTOMATION.md) | Setting up cron jobs and scheduled tasks |
 | [WEEKLY-REVIEW.md](docs/WEEKLY-REVIEW.md) | Weekly review process and maintenance |
