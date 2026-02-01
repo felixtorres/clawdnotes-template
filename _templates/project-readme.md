@@ -1,3 +1,11 @@
+---
+type: project
+status: active
+created: "{{date:YYYY-MM-DD}}"
+target:
+tags: []
+---
+
 # {{title}}
 
 **Status:** 🟢 Active

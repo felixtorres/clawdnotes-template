@@ -1,3 +1,8 @@
+---
+type: tasks
+project: "{{project}}"
+---
+
 # Tasks — {{project}}
 
 ## Current Sprint

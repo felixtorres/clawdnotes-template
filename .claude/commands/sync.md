@@ -24,7 +24,7 @@ For each project touched today:
 - [ ] `tasks.md` — Completed items marked done?
 - [ ] `README.md` — Status emoji accurate?
   - 🔴 Blocked
-  - 🟡 In Progress  
+  - 🟡 In Progress
   - 🟢 Ready/Active
   - ✅ Complete
   - 📦 Archived
@@ -35,7 +35,15 @@ Look for notes created today that aren't linked from anywhere:
 - If found, suggest where to link them
 - Or add links in today's daily note
 
-### 4. Commit to Git
+### 4. Regenerate CONTEXT.md
+
+- Scan all `2-Projects/*/README.md` files for status and last modified date
+- Update the "Active Projects" table with current project states
+- List recent daily notes (last 7 days) in "Recent Activity"
+- Collect open questions/blockers from project READMEs and recent daily notes
+- Write the updated CONTEXT.md to vault root
+
+### 5. Commit to Git
 
 ```bash
 git add -A
@@ -46,7 +54,7 @@ git commit -m "daily: YYYY-MM-DD sync
 git push
 ```
 
-### 5. Report
+### 6. Report
 
 Summarize:
 - Notes reviewed/updated

@@ -1,3 +1,11 @@
+---
+type: decision
+status: proposed
+created: "{{date:YYYY-MM-DD}}"
+project: "{{project}}"
+tags: []
+---
+
 # ADR-{{number}}: {{title}}
 
 **Date:** {{date:YYYY-MM-DD}}

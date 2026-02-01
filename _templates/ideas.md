@@ -1,3 +1,8 @@
+---
+type: ideas
+project: "{{project}}"
+---
+
 # Ideas — {{project}}
 
 Brainstorming and exploration for this project.
