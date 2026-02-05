@@ -74,6 +74,36 @@ When updating:
 
 ---
 
+## Feature Development Workflow
+
+For significant features, follow the structured workflow. See `docs/FEATURE-WORKFLOW.md` for full details.
+
+**Folder structure:**
+```
+2-Projects/<project>/features/<feature-name>/
+├── PRD.md          # What & why (required)
+├── DEV_PLAN.md     # How (after PRD approved)
+└── decisions.md    # Feature-specific ADRs (optional)
+```
+
+**When to use:**
+- New feature that needs design thinking → Start with PRD
+- Small fix/tweak → Skip, just do it
+- Prototype/spike → Lightweight PRD with `status: spike`
+
+**Workflow:**
+1. **Idea** → Add to `ideas.md`
+2. **PRD** → Create `features/<name>/PRD.md` using `[[_templates/feature-prd]]`
+3. **DEV_PLAN** → Create `features/<name>/DEV_PLAN.md` using `[[_templates/dev-plan]]`
+4. **Implement** → Work through phases, update tasks.md
+
+**When user says "new feature: <name>":**
+1. Create `features/<name>/` folder in the relevant project
+2. Create PRD.md from template
+3. Help fill in problem statement and requirements
+
+---
+
 ## Autonomous Behaviors
 
 ### On Session Start
