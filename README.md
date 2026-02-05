@@ -32,16 +32,20 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 ├── 0-Inbox/           # Quick capture, unprocessed items
 ├── 1-Daily/           # Daily notes (YYYY-MM-DD.md)
 ├── 2-Projects/        # Active projects with deliverables
+│   └── <project>/
+│       ├── README.md, tasks.md, decisions.md, ideas.md
+│       └── features/<feature>/PRD.md, DEV_PLAN.md
 ├── 3-Areas/           # Ongoing responsibilities (no end date)
 ├── 4-Resources/       # Reference material, topics of interest
 ├── 5-Archive/         # Completed/inactive items
-├── _templates/        # Note templates
+├── _templates/        # Note templates (daily, project, feature-prd, dev-plan)
 ├── CLAUDE.md          # AI assistant instructions (overview)
 ├── CONTEXT.md         # Vault state index (auto-updated)
 ├── MEMORY.md          # Long-term memory (decisions, learnings)
 └── docs/              # Guides and documentation
     ├── CONVENTIONS.md
     ├── AI-WORKSPACE-GUIDE.md
+    ├── FEATURE-WORKFLOW.md
     ├── AUTOMATION.md
     └── WEEKLY-REVIEW.md
 ```
@@ -53,6 +57,7 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 - 📁 PARA organization keeps things findable
 - 🔗 Wikilinks connect everything
 - 📋 Project structure with README/tasks/decisions/ideas
+- 🚀 Feature workflow: idea → PRD → DEV_PLAN → implementation
 - 🗄️ Clear archival process
 
 ### For AI Assistants
@@ -77,6 +82,7 @@ git clone https://github.com/YOUR_USERNAME/clawdnotes-template ~/Notes
 | [CONVENTIONS.md](docs/CONVENTIONS.md) | Detailed folder rules, commit format, archival process |
 | [CONTEXT.md](CONTEXT.md) | Current vault state (auto-updated by /sync) |
 | [AI-WORKSPACE-GUIDE.md](docs/AI-WORKSPACE-GUIDE.md) | Complete setup for AI-assisted development |
+| [FEATURE-WORKFLOW.md](docs/FEATURE-WORKFLOW.md) | Feature development: idea → PRD → DEV_PLAN → implementation |
 | [AUTOMATION.md](docs/AUTOMATION.md) | Setting up cron jobs and scheduled tasks |
 | [WEEKLY-REVIEW.md](docs/WEEKLY-REVIEW.md) | Weekly review process and maintenance |
 
