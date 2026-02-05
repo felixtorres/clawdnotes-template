@@ -4,7 +4,7 @@ A shareable Obsidian vault template designed for AI-assisted note-taking with Cl
 
 ## What This Is
 
-An opinionated, production-ready note-taking system that:
+An opinionated, note-taking system that:
 - Uses PARA organization (Projects, Areas, Resources, Archive)
 - Integrates seamlessly with AI assistants
 - Includes automation for daily briefings, inbox processing, and reviews
