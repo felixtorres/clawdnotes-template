@@ -112,12 +112,18 @@ For significant features, follow the structured workflow. See `docs/FEATURE-WORK
 3. Note any open questions in "AI Sync" sections
 
 ### Smart Capture
-When user says "capture: <text>":
-- **Task** → Add to most relevant project's tasks.md
-- **Idea** → Add to daily note Ideas section with `#idea`
-- **Link/reference** → Create in 4-Resources/ with summary
-- **Project concept** → Discuss, then create in 2-Projects/ if confirmed
-- **Unclear** → Add to 0-Inbox/ with `#needs-review`
+When user says "capture: <text>", route using this priority order (first match wins):
+
+1. **Belongs to an active project?** → Add to that project's `tasks.md`, `ideas.md`, or `notes/`
+2. **Belongs to an active area?** → Add to that area's folder in `3-Areas/`
+3. **Task with no clear project** → Add to `0-Inbox/` with `#task`
+4. **Idea** → Add to daily note Ideas section with `#idea`
+5. **Project concept** → Discuss, then create in `2-Projects/` if confirmed
+6. **Everything else** → Add to `0-Inbox/`
+
+**Inbox is the default.** Only create in `4-Resources/` during inbox processing (not during capture) when an item is confirmed reference material that doesn't belong to any project or area.
+
+**Never skip the Inbox for references.** Links, articles, and notes that aren't clearly tied to a project/area go to `0-Inbox/` first — they get triaged to `4-Resources/` later during inbox processing.
 
 ### Session Handoff
 At end of work sessions, update daily note "🤖 AI Sync":

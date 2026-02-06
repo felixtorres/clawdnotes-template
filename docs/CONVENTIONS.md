@@ -23,7 +23,15 @@ Detailed rules for folder organization, commit formatting, pre-commit workflow, 
 #### 4-Resources/
 ⚠️ **Most prone to explosion** — Be disciplined!
 
+**Gate:** Before placing anything here, confirm it passes ALL three:
+1. It's not actionable (not a task, not part of a project)
+2. It doesn't belong to an ongoing area of responsibility
+3. You expect to reference it again in the future
+
+If it fails any check, it belongs somewhere else (project, area, or archive).
+
 **Rules:**
+- **Never place here during capture** — Items arrive here only via inbox triage
 - **Max 2 levels deep** — `4-Resources/<topic>/` or `4-Resources/<topic>/<subtopic>/`
 - **Broad categories only** — Aim for 5-10 top-level folders max
 - **Use tags over folders** — If tempted to create a subfolder, consider `tags: [...]` in frontmatter instead
@@ -44,7 +52,13 @@ Detailed rules for folder organization, commit formatting, pre-commit workflow, 
 
 #### 0-Inbox/
 - **Keep flat** — No subfolders
-- **Process regularly** — Items shouldn't live here long
+- **Default landing zone** — When in doubt, capture here first
+- **Process regularly** — Items shouldn't live here longer than one triage cycle
+- **Triage destination checklist:** For each item, ask in order:
+  1. Does it belong to an active project? → Move to project
+  2. Does it belong to an area? → Move to area
+  3. Is it reference material I'll look up again? → Move to `4-Resources/`
+  4. Is it a one-off note? → Link from daily note, then archive
 
 #### 1-Daily/
 - **Always flat** — No subfolders
