@@ -63,11 +63,71 @@ Or use Obsidian's Graph View → look for disconnected nodes.
 - Move to `4-Resources/` if it's reference material, OR
 - Archive to `5-Archive/0-Orphans/`
 
-### 5. Archive Maintenance (5 min)
+### 5. Archive Daily Notes (10 min)
 
-**Daily notes:**
-- If you have 2+ months of daily notes, archive the oldest month
-- Move to `5-Archive/1-Daily/YYYY-MM/`
+Keep `1-Daily/` lean — only recent notes stay live.
+
+**Retention policy:**
+- **Keep live:** Current week only (Mon–Sun)
+- **Keep live:** Weekly summaries from current month only
+- **Keep live:** Monthly summaries (permanent — these are the long-term index)
+- **Archive everything older** → `5-Archive/1-Daily/YYYY-MM/`
+
+**Before archiving each note:**
+- Extract unfinished tasks → project `tasks.md` or `0-Inbox/`
+- Extract key learnings from AI Sync → project notes or MEMORY.md
+- Verify the note's week has a weekly summary (create if missing)
+
+**Bloated notes (>100 lines):**
+- Move detailed AI Sync session summaries to project `notes/`, leave a link
+- Goal: daily notes should be <80 lines after cleanup
+
+**Monthly rollup (first weekly review of a new month):**
+
+When the month turns over, consolidate the previous month's weekly summaries:
+
+1. Read all weekly summaries from the previous month
+2. Create `1-Daily/YYYY-MM-monthly.md` with:
+   - Combined accomplishments, decisions, learnings
+   - Project progress across the month
+   - Stats and focus areas for next month
+3. Archive the individual weekly summaries to `5-Archive/1-Daily/YYYY-MM/`
+
+**Monthly summary template:**
+```markdown
+---
+type: monthly
+created: "YYYY-MM-01"
+month: M
+year: YYYY
+---
+
+# YYYY-MM Monthly Summary
+
+## TL;DR
+[2-3 sentence summary of the month]
+
+## Accomplishments
+[Consolidated from weekly summaries]
+
+## Projects Progressed
+| Project | Status Change | Key Milestones |
+
+## Key Decisions
+[Consolidated from weekly summaries]
+
+## Learnings
+[Consolidated from weekly summaries]
+
+## Focus for Next Month
+[Forward-looking priorities]
+
+## Stats
+- Daily notes: N
+- Weekly summaries consolidated: N
+```
+
+### 6. Archive Other Items (5 min)
 
 **Completed projects:**
 - Any projects with ✅ Complete status? Move to `5-Archive/2-Projects/`
@@ -75,7 +135,7 @@ Or use Obsidian's Graph View → look for disconnected nodes.
 **Stale resources:**
 - Any resources not accessed in 3+ months? Consider archiving.
 
-### 6. Plan Next Week (5 min)
+### 7. Plan Next Week (5 min)
 
 - [ ] What's the #1 priority for next week?
 - [ ] Any deadlines approaching?
@@ -105,9 +165,14 @@ Copy this to your daily note on review day:
 - [ ] Check for stale tasks
 - [ ] Archive completed projects
 
+### Daily Note Archival
+- [ ] Archive notes older than current week
+- [ ] Extract unfinished tasks before archiving
+- [ ] Monthly rollup (if new month)
+
 ### Maintenance
 - [ ] Find and handle orphan notes
-- [ ] Archive old daily notes (if needed)
+- [ ] Archive completed projects
 - [ ] Clean stale resources
 
 ### Planning

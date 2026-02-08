@@ -131,9 +131,15 @@ Before committing:
 ## Archival Process
 
 ### Daily Notes
-- **Keep in `1-Daily/`:** Current month + previous month
-- **Archive monthly:** Move older notes to `5-Archive/1-Daily/YYYY-MM/`
-- **Before archiving:** Ensure key learnings captured in project notes or MEMORY.md
+- **Keep in `1-Daily/`:** Current week only (Mon–Sun)
+- **Keep weekly summaries:** Only from current month; older ones get rolled up
+- **Archive during weekly review:** Move older notes to `5-Archive/1-Daily/YYYY-MM/`
+- **Monthly rollup:** On first weekly review of a new month, consolidate previous month's weekly summaries into `YYYY-MM-monthly.md`, then archive the weeklies
+- **Before archiving:**
+  - Extract unfinished tasks → project `tasks.md` or `0-Inbox/`
+  - Ensure key learnings captured in project notes or MEMORY.md
+  - For bloated notes (>100 lines): move detailed AI Sync content to project `notes/`, leave a link
+- **Goal:** `1-Daily/` should have ~10 files max (dailies + current month weeklies + monthly summaries)
 
 ### Projects
 - When complete: Move entire folder to `5-Archive/2-Projects/<name>/`
