@@ -29,13 +29,20 @@ For each project touched today:
   - ✅ Complete
   - 📦 Archived
 
-### 3. Find Orphan Notes
+### 3. Run Quick Organization Check
+
+- Validate frontmatter on today's notes and any modified files
+- Check that new notes are in correct locations
+- Auto-fix safe issues (missing dates, duplicate tags)
+- Report any issues found (don't block on them)
+
+### 4. Find Orphan Notes
 
 Look for notes created today that aren't linked from anywhere:
 - If found, suggest where to link them
 - Or add links in today's daily note
 
-### 4. Regenerate CONTEXT.md
+### 5. Regenerate CONTEXT.md
 
 - Scan all `2-Projects/*/README.md` files for status and last modified date
 - Update the "Active Projects" table with current project states
@@ -43,7 +50,7 @@ Look for notes created today that aren't linked from anywhere:
 - Collect open questions/blockers from project READMEs and recent daily notes
 - Write the updated CONTEXT.md to vault root
 
-### 5. Commit to Git
+### 6. Commit to Git
 
 ```bash
 git add -A
@@ -54,10 +61,11 @@ git commit -m "daily: YYYY-MM-DD sync
 git push
 ```
 
-### 6. Report
+### 7. Report
 
 Summarize:
 - Notes reviewed/updated
 - Projects touched
+- Organization issues found/fixed (if any)
 - Orphans found (if any)
 - Commit hash (if committed)

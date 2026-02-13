@@ -35,6 +35,8 @@ Every note MUST have YAML frontmatter. The `type` field is required.
 | `tasks` | `type`, `project` | |
 | `ideas` | `type`, `project` | |
 | `resource` | `type`, `created`, `updated` | `tags`, `related` |
+| `prd` | `type`, `status`, `created`, `project` | `tags` |
+| `dev-plan` | `type`, `status`, `created`, `project`, `prd` | `tags` |
 
 **`status` values:** `active`, `proposed`, `accepted`, `complete`, `archived`, `deprecated`
 **`related`:** Optional field for explicit cross-linking: `related: [note-a, note-b]`

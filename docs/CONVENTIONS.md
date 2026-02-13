@@ -68,6 +68,112 @@ If it fails any check, it belongs somewhere else (project, area, or archive).
 - **Mirror the live structure** — `5-Archive/2-Projects/`, etc.
 - Move entire folders when archiving
 
+### Project Internal Structure
+
+Projects grow in complexity over time. Structure them based on size:
+
+#### Small Projects (1-5 files)
+**Structure:**
+```
+2-Projects/<name>/
+├── README.md      ← Overview, status, key links
+├── tasks.md       ← Task list
+├── ideas.md       ← Brainstorming
+└── PRD.md         ← Product requirements (if applicable)
+```
+**No subfolders needed.** Keep everything at root level.
+
+---
+
+#### Medium Projects (5-15 files)
+**Add `features/` folder for multi-feature projects:**
+```
+2-Projects/<name>/
+├── README.md
+├── tasks.md
+├── ideas.md
+├── decisions.md
+├── PRD.md              ← Overall project PRD
+└── features/
+    ├── feature-a/
+    │   ├── PRD.md
+    │   └── DEV_PLAN.md
+    └── feature-b/
+        └── PRD.md
+```
+**When to use:** When project has 3+ distinct features that need isolated planning/development.
+
+---
+
+#### Large Projects (15+ files)
+**Add topic-based subfolders:**
+```
+2-Projects/<name>/
+├── README.md
+├── tasks.md
+├── ideas.md
+├── decisions.md
+├── PRD.md
+├── features/           ← Feature PRDs & DEV_PLANs
+│   ├── feature-a/
+│   │   ├── PRD.md
+│   │   └── DEV_PLAN.md
+│   └── feature-b/
+├── design/             ← Architecture & design docs
+│   ├── architecture.md
+│   ├── data-model.md
+│   └── ui-design.md
+├── research/           ← Research & evaluation
+│   ├── research-tech-x.md
+│   └── research-alternatives.md
+└── comparisons/        ← Market/competitive analysis (optional)
+    └── competitor-analysis.md
+```
+
+**Folder purposes:**
+- **`features/`** — Feature-specific PRDs, DEV_PLANs, and implementation notes
+- **`design/`** — Architecture decisions, system design, data models, UI/UX design
+- **`research/`** — Technology evaluation, experiments, proofs-of-concept
+- **`comparisons/`** — Market analysis, competitor research, product comparisons
+
+**Naming conventions:**
+- Design docs: `architecture.md`, `data-model.md`, `ui-design.md`
+- Research: `research-<topic>.md` (e.g., `research-neo4j-vs-kuzu.md`)
+- Features: `<feature-name>/PRD.md` and `<feature-name>/DEV_PLAN.md`
+
+**When to create subfolders:**
+- Wait until you have **5+ files** of a specific type
+- Create `design/` when you have multiple architecture/design docs
+- Create `research/` when evaluating multiple technologies/approaches
+- Create `comparisons/` if doing competitive analysis
+
+**Migration from `notes/`:**
+If you have an existing `notes/` folder, migrate to structured folders:
+1. **Design/architecture** → `design/`
+2. **Research/evaluation** → `research/`
+3. **Competitive analysis** → `comparisons/`
+4. **Feature-specific** → `features/<name>/`
+
+---
+
+### Project-Specific vs General Resources
+
+**Key principle:** Link, don't duplicate.
+
+| Content Type | Location | Example |
+|--------------|----------|---------|
+| **Project-specific research** | `2-Projects/<name>/research/` | Evaluating database X for project Y |
+| **General reference material** | `4-Resources/` | How databases work (general) |
+| **Project using general concept** | Link from project to resource | `[[4-Resources/tech/database-patterns]]` |
+| **Application notes** | `2-Projects/<name>/design/` or root | "How we apply pattern X" |
+
+**Decision tree:**
+1. **Is this research for a specific active project?** → `2-Projects/<name>/research/`
+2. **Will this be useful across multiple projects?** → `4-Resources/`
+3. **Not sure yet?** → Start in `0-Inbox/`, process during triage
+
+---
+
 ### Folder Creation Checklist
 
 Before creating a new folder, ask:

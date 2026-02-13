@@ -11,13 +11,33 @@ Deep maintenance — run on Sundays (or your week's end).
 - [ ] Route each to appropriate location
 - [ ] Achieve inbox zero
 
-### 2. Review Daily Notes (15 min)
+### 2. Run Full Vault Organization (15 min)
+- [ ] Validate frontmatter across all documents
+- [ ] Verify locations match document types
+- [ ] Check tag taxonomy compliance
+- [ ] Audit link health (broken links, orphaned notes)
+- [ ] Flag bloated daily notes (>100 lines)
+- [ ] Auto-fix safe issues, report complex ones
+- [ ] Update `docs/ORGANIZATION_REPORT.md`
+
+### 3. Check for Archival Candidates (5 min)
+- [ ] Count daily notes older than current week (Mon-Sun)
+- [ ] Check if it's first week of new month (monthly rollup needed)
+- [ ] Find completed projects (status: complete, archived)
+- [ ] Detect orphaned notes (no wikilinks)
+
+**If archival candidates found:**
+- Report counts and suggest running `/project:archive`
+- Example: "⚠️ 8 daily notes from January should be archived. Run /project:archive when ready."
+- Do NOT archive automatically (user should review first)
+
+### 4. Review Daily Notes (10 min)
 - [ ] Scan this week's daily notes
 - [ ] Extract key accomplishments
 - [ ] Identify patterns or themes
 - [ ] Capture significant learnings in MEMORY.md or project notes
 
-### 3. Check Project Health (10 min)
+### 5. Check Project Health (10 min)
 
 For each project in `2-Projects/`:
 - [ ] Is status emoji accurate?
@@ -25,38 +45,7 @@ For each project in `2-Projects/`:
 - [ ] Any stale tasks (7+ days untouched)?
 - [ ] Should any projects be archived?
 
-### 4. Handle Orphan Notes (5 min)
-- [ ] Find notes not linked from anywhere
-- [ ] Link them, move to Resources, or archive
-
-### 5. Archive Daily Notes (10 min)
-
-Keep `1-Daily/` lean — only recent notes stay live.
-
-**Retention:**
-- **Keep live:** Current week only (Mon–Sun)
-- **Keep live:** Weekly summaries from current month only
-- **Keep live:** Monthly summaries (permanent)
-- **Archive everything older** → `5-Archive/1-Daily/YYYY-MM/`
-
-**Before archiving each note:**
-- [ ] Extract unfinished tasks → project `tasks.md` or `0-Inbox/`
-- [ ] Extract key learnings from AI Sync → project notes or MEMORY.md
-- [ ] Verify the note's week has a weekly summary (create if missing)
-
-**Bloated notes (>100 lines):**
-- Move detailed AI Sync session summaries to project `notes/`, leave a link
-- Goal: daily notes should be <80 lines after cleanup
-
-**Monthly rollup (first weekly review of a new month):**
-- [ ] Consolidate previous month's weekly summaries into `YYYY-MM-monthly.md`
-- [ ] Archive the individual weeklies alongside their daily notes
-
-### 6. Archive Other Items (5 min)
-- [ ] Move completed projects to `5-Archive/2-Projects/`
-- [ ] Clean stale resources (not accessed in 3+ months)
-
-### 7. Plan Next Week (5 min)
+### 6. Plan Next Week (5 min)
 - [ ] What's the #1 priority?
 - [ ] Any deadlines approaching?
 - [ ] Projects needing attention?
@@ -65,8 +54,8 @@ Keep `1-Daily/` lean — only recent notes stay live.
 
 After completing, summarize:
 - Items processed from inbox: X
+- Organization issues found/fixed: [counts]
+- Archival candidates detected: [if any, suggest running /project:archive]
 - Learnings captured: [brief list]
 - Projects needing attention: [list]
-- Daily notes archived: X
-- Items archived: X
 - Next week's top priority: [what]
